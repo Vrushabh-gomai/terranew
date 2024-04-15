@@ -9,11 +9,12 @@ terraform {
 }
 
 provider "aws" {
-    region = "ap-south-1"
-    shared_config_files = "/home/ubuntu/.aws/conf"
-    shared_credentials_files = "/home/ubuntu/.aws/creds"
-    
-  
+  region = "ap-south-1"
+
+  shared_config_files = ["/home/ubuntu/.aws/conf"]
+  shared_credentials_files = ["/home/ubuntu/.aws/creds"]
+}
+
 }
 resource "aws_instance" "vru" {
     ami = "ami-007020fd9c84e18c7"
