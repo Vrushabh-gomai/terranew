@@ -17,7 +17,7 @@ resource "aws_instance" "first" {
 
 
 resource "aws_instance" "second" {
-    ami = "ami-007020fd9c84e18c7"
+    ami = "ami-080e1f13689e07408"
     instance_type = "t2.micro"
     provider = "aws.us-east-1"
   
